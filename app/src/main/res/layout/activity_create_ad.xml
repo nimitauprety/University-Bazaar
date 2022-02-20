@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAd">
+
+    <EditText
+        android:id="@+id/createAdEdit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the title of Your Ad"
+        android:layout_marginTop="200dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/createAdEdit1"
+        android:layout_marginTop="25dp"
+        android:text="Enter Description" />
+
+    <Button
+        android:id="@+id/createAduploadButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createAdEdit1"
+        android:layout_marginTop="200dp"
+        android:text="Upload a picture"/>
+
+    <ProgressBar
+        android:id="@+id/createAdProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createAduploadButton"
+        android:layout_marginTop="20dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+    <Button
+        android:id="@+id/createAdButton3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createAdProgress"
+        android:layout_marginTop="100dp"
+        android:text="Submit" />
+
+
+
+
+</RelativeLayout>

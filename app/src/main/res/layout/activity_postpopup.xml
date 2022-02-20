@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    tools:context=".Popup">
+
+
+    <EditText
+        android:id="@+id/EditPost"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="@string/HintEnterPost"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/PostButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditPost"
+        android:text="Submit"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/PostButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_below="@+id/EditPost"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/PostButton1"
+        android:layout_marginLeft="50dp"/>
+
+
+</RelativeLayout>
